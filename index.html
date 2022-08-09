@@ -3,35 +3,44 @@
 <head>
   <title>[출처] 청울림의 공유오피스 사업특강|작성자 윈클</title>
   <meta charset="utf-8">
+  <script>
+  function ﻿LinksetColor(color){
+    var alist = document.querySelectorAll('a')
+    var i = 0;
+    while (i<alist.length){
+        ﻿alist[i].style.color = color;
+        i = i + 1;
+      }
+  }
+  function ﻿BodysetColor(color){
+    document.querySelector('body').style.color = 'color';
+  }
+  function ﻿BodysetBackgroundColor(color){
+  document.querySelector('body').style.backgroundColor = 'color';
+  }
+  function ﻿nightDayHandler(self){
+    var target = document.querySelector('body');
+    if(self.value==='night'){
+      BodysetBackgroundColor('black');
+      BodysetColor('white');
+      self.value='day'
+
+      ﻿﻿LinksetColor('powderblue');
+    } else {
+      BodysetBackgroundColor('white');
+      BodysetColor('black');
+      self.value='night'
+
+      ﻿﻿LinksetColor('blue');
+    }
+  }
+  </script>
 </head>
 
   <body>
 <a href="4.html"><h1>[출처] 청울림의 공유오피스 사업특강|작성자 윈클</h1></a>
 <input type="button" value="night" onclick="
-var target = document.querySelector('body');
-if(this.value==='night'){
-  target.style.backgroundColor = 'black';
-  target.style.color = 'white';
-  ﻿this.value='day'
-
-  var alist = document.querySelectorAll('a')
-  var i = 0;
-  while (i<alist.length){
-      ﻿alist[i].style.color = 'powderblue'
-      i = i + 1;
-    }
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value='night'
-
-    var alist = document.querySelectorAll('a')
-    var i = 0;
-    while (i<alist.length){
-        ﻿alist[i].style.color = 'blue'
-        i = i + 1;
-      }
-  }
+﻿  nightDayHandler(this);
 ">
 <h2><ol>
   <a href="고정수익.html"target="_blank"title="현금흐름의 중요성"><li> 고정수익(현금흐름)의 중요성</li></a>
