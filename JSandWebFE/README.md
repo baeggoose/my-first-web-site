@@ -15,3 +15,21 @@ https://three-catfish-179.notion.site/0f115dfc5736484bb2d22b581fa94618
 **Hello, JavaScript 자바스크립트 입문**
 
 https://three-catfish-179.notion.site/Hello-JavaScript-890a3e69670d4424b8b75efe01f80d87
+
+### **image gallery 실습**
+
+**Part 1. 갤러리 틀 만들기**
+
+1. JSON으로 갤러리에 표시될 이미지 리스트 가져오기
+2. 배열에서 개별 이미지에 접근
+3. 갤러리에 Image 추가
+
+**Part 2. 이미지 선택 기능 만들기**
+
+1. 이미지 클릭 이벤트 핸들링 하기
+2. 이미지 선택/해제 기능 구현하기
+
+추가적으로 다룬 API
+
+- classlist : 엘리먼트에 적용된 클래스 리스트 객체
+  - add, remove, toggle 메소드 : 해당 엘리먼트에 클래스를 추가, 삭제, 추가/삭제 기능 제공

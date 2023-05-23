@@ -8,11 +8,13 @@ req.onreadystatechange = function () {
       var div = document.createElement("div");
       div.setAttribute("class", "image");
       div.onclick = function () {
-        if (this.getAttribute("class").indexOf("image-selected") == -1) {
-          this.setAttribute("class", "image image-selected");
-        } else {
-          this.setAttribute("class", "image");
-        }
+        // if (this.getAttribute("class").indexOf("image-selected") == -1) {
+        //   this.setAttribute("class", "image image-selected");
+        // } else {
+        //   this.setAttribute("class", "image");
+        // }
+
+        this.classList.toggle("image-selected");
       };
       var img = document.createElement("img");
       img.src = data[i];
