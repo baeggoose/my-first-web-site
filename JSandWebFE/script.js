@@ -18,9 +18,13 @@ req.onreadystatechange = function () {
       };
       div.onmouseover = function () {
         var element = this;
-        setTimeout(function () {
+        this.timerId = setTimeout(function () {
           element.classList.add("image-magnified");
         }, 1000);
+      };
+      div.onmouseout = function () {
+        clearTimeout(this.timerId);
+        this.classList.remove("image-magnified");
       };
       var img = document.createElement("img");
       img.src = data[i];
