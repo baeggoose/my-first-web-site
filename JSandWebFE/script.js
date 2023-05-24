@@ -25,10 +25,18 @@ req.onreadystatechange = function () {
 };
 req.send();
 
-function selectAll(btn) {
+function SelectAll(btn) {
   var images = document.getElementsByClassName("image");
   for (var i = 0; i < images.length; i++) {
-    images[i].classList.add("image-selected");
+    if (btn.value == "Unselect All") {
+      images[i].classList.remove("image-selected");
+    } else {
+      images[i].classList.add("image-selected");
+    }
   }
-  btn.value = "Unselect All";
+  if (btn.value == "Unselect All") {
+    btn.value = "Select All";
+  } else {
+    btn.value = "Unselect All";
+  }
 }
