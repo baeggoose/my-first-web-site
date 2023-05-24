@@ -16,6 +16,12 @@ req.onreadystatechange = function () {
 
         this.classList.toggle("image-selected");
       };
+      div.onmouseover = function () {
+        var element = this;
+        setTimeout(function () {
+          element.classList.add("image-magnified");
+        }, 1000);
+      };
       var img = document.createElement("img");
       img.src = data[i];
       div.appendChild(img);
