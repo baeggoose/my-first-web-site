@@ -24,3 +24,10 @@ req.onreadystatechange = function () {
   }
 };
 req.send();
+
+function selectAll() {
+  var images = document.getElementsByClassName("image");
+  for (var i = 0; i < images.length; i++) {
+    images[i].classList.add("image-selected");
+  }
+}
