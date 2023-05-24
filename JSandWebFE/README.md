@@ -33,3 +33,15 @@ https://three-catfish-179.notion.site/Hello-JavaScript-890a3e69670d4424b8b75efe0
 
 - classlist : 엘리먼트에 적용된 클래스 리스트 객체
   - add, remove, toggle 메소드 : 해당 엘리먼트에 클래스를 추가, 삭제, 추가/삭제 기능 제공
+
+**Part 3. 전체선택 기능 만들기**
+
+1. 버튼 클릭 이벤트 핸들링 하기
+
+2. 전체 이미지 div tag 얻어오기
+
+3. 배열에서 각각의 이미지에 대해 class 조정
+
+추가적으로 다룬 내용
+
+- tag의 속성으로 실행되던 event handler에서 this를 호출한 함수의 인자로 전달해 이벤트가 발생한 element에 쉽게 접근
